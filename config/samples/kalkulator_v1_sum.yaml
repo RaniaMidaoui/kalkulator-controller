@@ -1,0 +1,13 @@
+apiVersion: kalkulator.kalkulator.io/v1
+kind: Sum
+metadata:
+  labels:
+    app.kubernetes.io/name: sum
+    app.kubernetes.io/instance: sum-sample
+    app.kubernetes.io/part-of: kalkulator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kalkulator
+  name: sum-sample
+spec:
+  numberOne: 10
+  numberTwo: -20
